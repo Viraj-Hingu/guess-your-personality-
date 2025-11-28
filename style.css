@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #8ed6ff, #c8b8ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "buttonFont";
+  src: url("/manline-slabs-font/ManlineSlabs-xRWVj.ttf");
+}
+@font-face {
+  font-family: "textfont";
+  src: url("/morinor-lenteron-font/MorinorLenteron-BLVM5.otf");
+}
+/* Button Section */
+section.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+section.btn button {
+  height: 4rem;
+  font-size: 2rem;
+  font-family: buttonFont;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+section.btn button:hover {
+  background-color: palegoldenrod;
+  transition: all ease-in 0.2s;
+}
+
+/* Text Section */
+section.text {
+  width: 62%;
+  text-align: center;
+  height: 50%;
+  color: black;
+  font-family: textfont;
+  font-size: 1.5rem;
+  background-color: rgb(182, 161, 240);
+}
+
+@media (max-width: 576px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 1.5rem 1.5rem;
+  }
+  section.text {
+    width: 100%;
+    height: 100%;
+  }
+  section.btn button {
+    height: auto;
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
